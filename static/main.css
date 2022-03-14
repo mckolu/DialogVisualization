@@ -1,0 +1,127 @@
+.wrapper {
+	position: relative;
+}
+
+.left {
+	position: absolute;
+	z-index: 1;
+}
+
+.right {
+	position: absolute;
+    overflow: hidden;
+    left: 691px;
+    top: 327px;
+    z-index: 2;
+}
+
+.right_top {
+  position: absolute;
+  overflow: hidden;
+  left: 1090px;
+  top: 80px;
+  width: 205px;
+  height: 220px;
+  z-index: 8;
+}
+
+
+.right_top_arrow {
+  position: absolute;
+  overflow: hidden;
+  left: 1010px;
+  top: 80px;
+  width: 200px;
+    height: 220px;
+  z-index: 8;
+}
+
+
+
+.right .tabcontent {
+  border: 1px solid #ccc;
+  width=595;
+  height=320;
+}
+
+
+#myText:before{
+    content:"\a";
+    white-space: pre;
+}
+
+.right .tab {
+  width= 600;
+  height= 20;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  z-index: 5;
+}
+
+
+.right .tab button.active {
+  background-color: #ccc;
+}
+
+.right .tab button:hover {
+  background-color: #d9e0e7;
+}
+
+
+.right .tab button {
+  float: left;
+  border: 0.5;
+  border-color: #a972cb;
+  outline: none;
+  cursor: pointer;
+  padding-right: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: 0.2s;
+  font-size: 17px;
+}
+
+#myvideo{
+    margin-top: 25px;
+    width: 345px;
+    transform-origin: 100% 17% ;
+    transition: transform 0.3s;
+
+//https://codepen.io/danwilson/pen/qXPdbw
+
+}
+
+#myvideo1{
+    margin-top: 1px;
+    z-index: 1;
+    border: 1px solid black;
+
+}
+
+#printFollower{
+    margin-top: 32px;
+    margin-left: -10px;
+    overflow: hidden;
+    width: 190px;
+    height: 200px;
+    white-space: initial;
+
+#arrow{
+    margin-top: 52px;
+    margin-left: 4px;
+    overflow: hidden;
+    width: 60px;
+    height: 80px;
+    white-space: initial;
+
+
+.btnDiv {
+
+    margin-bottom: 5px;
+}
+
+}
+
+
+
+

@@ -3,9 +3,9 @@
 
 DialogViz is a platform that allows analyzing dialogues between two students and creating several visualizations. 
 
-# Creater: Mehmet Celepkolu
+## Creater: Mehmet Celepkolu
 
-# Getting started
+## Getting started
 Python, Bokeh Visualizations and Natural Language Processing and Machine Learning Models.
 
 <!-- # Running

@@ -1,9 +1,6 @@
 # Dialogue Vizualizations with Python and NLP
 
-Incomplete :) Hoping to clean this code by 3/25/2022
-
-
-
+Incomplete description :) I haven't had time to clean the GitHub repo but I am planning to make it ready by 3/25/2022.
 
 
 DialogViz is a platform that allows analyzing dialogues between two students and creating several visualizations. 

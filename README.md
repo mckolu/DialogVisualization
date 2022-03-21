@@ -3,7 +3,7 @@
 Incomplete description :) I haven't had time to clean the GitHub repo but I am planning to make it ready by 3/25/2022.
 
 
-DialogViz is a platform that allows analyzing dialogues between two students and creating several visualizations. 
+DialogVisualization is a platform that allows analyzing dialogues between two students and creating several visualizations. 
 
 ## Link to the full dissertation: 
 

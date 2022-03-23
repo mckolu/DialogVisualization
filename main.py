@@ -157,8 +157,6 @@ if __name__ == '__main__':
     app.run(host='localhost', debug=True, threaded=True)
 
 
-
-print ("")
 print ("")
 print ("")
 print ("")

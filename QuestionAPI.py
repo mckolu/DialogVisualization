@@ -13,8 +13,8 @@ def classify_utterance(utt):
     # make a prediction
     return (loaded_model.predict(loaded_vectorizer.transform([utt]))[0])
 
-# classify_utterance("How to do")
-# classify_utterance("What is this")
+# classify_utterance("How to do?")
+# classify_utterance("What is this?")
 
 
 def predict_test():
@@ -48,7 +48,7 @@ def predict_test():
     print("Recall: ", metrics.recall_score(y_test, y_pred, average=None))
     print("F1: ", metrics.f1_score(y_test, y_pred, average=None))
 
-    print("")
+    print(" ")
 
 
     print(metrics.confusion_matrix(y_test, y_pred))
@@ -61,11 +61,13 @@ def predict_test():
     # for each in ccc:
     #     print(each)
 
-    # print (" ")
+    # print ("  ")
     # print ("False negatives")
     # print(x_test[(y_pred == 0) & (y_test == 1)])
 
 predict_test()
+
+
 
 
 

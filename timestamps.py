@@ -18,7 +18,7 @@ def temporal(dfs):
 
         name = data_df['GroupName'][0]
 
-        print ("----------------------------"+name+"----------------------------")
+        print ("---------------------------- " + name + " ----------------------------")
 
         Speakers = ["S1", "S2"]
         TimeSeconds = (pd.to_numeric(data_df.TotalSecond, errors='coerce').fillna(0).astype(np.int64)).tolist()
@@ -42,7 +42,7 @@ def temporal(dfs):
         #     Sentences.append(sentence)
 
         # Optimize the code for sliding window
-        # https://stackoverflow.com/questions/38507672/summing-elements-in-a-sliding-window-numpy
+        # Source: https://stackoverflow.com/questions/38507672/summing-elements-in-a-sliding-window-numpy
         # In[334]: mydata
         # Out[334]: array([4, 2, 3, 8, -6, 10])
         #

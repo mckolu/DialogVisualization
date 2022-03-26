@@ -60,9 +60,8 @@ def ExtractData():
 
         df_filtered = df_import.loc[df_import['QuestionCode'].isin(['C','O'])]
 
-    #     frames.append(df_filtered)
+    # frames.append(df_filtered)
     # df = pd.concat(frames).reset_index()
-    # print(df)
 
         aresults = []
         for index, row in df_filtered.iterrows():
@@ -98,14 +97,12 @@ def ExtractData():
         df = df.drop(df[df['QuestionCode'] == "C"].sample(frac=.688, random_state=1).index) # Downsample -.681 is the best
 
         df_new = df[['File', 'ExtractedQuestions', 'QuestionCode']]
-        # print(df_new)
 
         doc = np.asarray(df_new['ExtractedQuestions'].tolist())
 
         df = df.reset_index()
         dfList.append(df)
     return (dfList)
-
 
 # for each in ExtractData():
 #     print(each)
@@ -114,8 +111,6 @@ def ExtractData():
 
 # end = time.time()
 # print(end - start)
-
-
 
 
 ## TODO: Create machine learning functions that take df['ExtractedQuestions'] and df['QuestionCode'] and take care of the rest

@@ -97,23 +97,7 @@ def w2v(corpus):
     # similarities = w2v_model.wv.most_similar(positive=['beak', 'for'], negative=['bird'])
     # print(similarities)
 
-
-# def fastT(corpus):
-#     from gensim.models import FastText
-#     wpt = nltk.WordPunctTokenizer()
-#     tokenized_corpus = [wpt.tokenize(corpus)]
-#
-#
-#     model_ted = FastText(tokenized_corpus, size=100, window=5, min_count=5, workers=4, sg=1)
-#
-#     model_ted.wv.most_similar("bird")
-#     # model.train(sentences=corpus, total_examples=len(corpus), epochs=10)  # train
-#
-#     # print(model.most_similar("length"))
-
 # w2v(ExtractData())
-
-
 
 
 model = KeyedVectors.load('w2v_model.bin')
@@ -144,7 +128,6 @@ def sentenceSimilarity(sent_1, sent_2):
         cos_similarity = np.dot(vector_1, vector_2)/(np.linalg.norm(vector_1)* np.linalg.norm(vector_2))
 
     return (abs(cos_similarity))
-
 
 
 # print(sentenceSimilarity("barcelona", "change sugar level"))

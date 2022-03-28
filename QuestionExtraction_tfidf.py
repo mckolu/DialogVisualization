@@ -57,7 +57,6 @@ def ExtractData():
         data_df1 = (pd.read_excel(file_location, sheet_name=0))
         df_import = data_df1[['Speaker', 'Text', 'QuestionCode']]
         df_import = df_import.assign(File=file) # Create a File column with file name values
-
         df_filtered = df_import.loc[df_import['QuestionCode'].isin(['C','O'])]
 
     # frames.append(df_filtered)
@@ -108,9 +107,5 @@ def ExtractData():
 #     print(each)
 
 # file1.close()
-
-# end = time.time()
-# print(end - start)
-
 
 ## TODO: Create machine learning functions that take df['ExtractedQuestions'] and df['QuestionCode'] and take care of the rest

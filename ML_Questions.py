@@ -199,8 +199,6 @@ for train_index, test_index in kf.split(X, y):
 # print(fittedModel.predict(mySentence))
 
 
-
-
 # https://kavita-ganesan.com/news-classifier-with-logistic-regression-in-python/#Feature-Representation
 # https://www.quora.com/Why-does-TF-term-frequency-sometimes-give-better-F-scores-than-TF-IDF-does-for-text-classification
 # https://towardsdatascience.com/dont-sweat-the-solver-stuff-aea7cddc3451

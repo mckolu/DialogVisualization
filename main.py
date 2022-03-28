@@ -1,7 +1,7 @@
 import keywordExtract
 import re
 import graphs
-import timestamps
+import compute_time_series
 import numpy as np
 import pandas as pd
 import joblib
@@ -132,7 +132,7 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 @app.route('/')
 def index():
-    return graphs.graph_bokeh(timestamps.temporal(data()))
+    return graphs.graph_bokeh(compute_time_series.temporal(data()))
 
 @app.route('/second', methods=['POST'])
 def second():

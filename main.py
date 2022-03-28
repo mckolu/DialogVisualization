@@ -13,6 +13,8 @@ p = inflect.engine()
 pd.set_option("display.max_columns", 10)
 pd.set_option('display.width', 100)
 
+
+# Clean the Dialogue Data
 def clean(text1):
     text = re.sub("[\(\[].*?[\)\]]", "", text1) # Change everything between [**]
     text = text.lower() \
@@ -27,7 +29,6 @@ def clean(text1):
         .replace("student mentions teacher name", "NAME") \
         .replace("<", "").replace(">", "").replace("[", "").replace("]", "")
     return text
-
 def cleanAgain(text):
     tokenized = RegexpTokenizer(r'\w+').tokenize(clean(text))
     # cleanedTokens1 = ([each if each not in stop_words else "" for each in tokenized])
@@ -37,6 +38,7 @@ def cleanAgain(text):
     sentence = " ".join(cleanedTokens)
     return sentence
 
+# Classify the text as an open or closed question. 
 def classify_utterance(utt):
     loaded_vectorizer = joblib.load('tfidf.pkl') # load the vectorizer
     loaded_model = joblib.load('ML_model.pkl') # load the model

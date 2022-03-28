@@ -1,3 +1,5 @@
+# This file extracts the questions from the transcriptions to create an ML model for classification
+
 import os
 import numpy as np
 import re
@@ -15,6 +17,7 @@ stop_words = stop_words.union(new_words)
 
 pd.options.mode.chained_assignment = None
 
+# Clean the Dialogue Data
 def clean(text1):
     text = re.sub("[\(\[].*?[\)\]]", "", text1) # Change everything between [**]
     text = text.lower() \
@@ -29,19 +32,15 @@ def clean(text1):
         .replace("student mentions teacher name", "NAME") \
         .replace("<", "").replace(">", "").replace("[", "").replace("]", "")
     return text
-
 def cleanAgain(text):
     tokenized = RegexpTokenizer(r'\w+').tokenize(clean(text))
     cleanedTokens = ([p.number_to_words(each) if each.isdigit() else each for each in tokenized]) # Convert digits to text
     sentence = " ".join(cleanedTokens)
     return sentence
 
-# file1 = open("MyFile.txt","w")
 
 def ExtractData():
-    folder_path = r"/Users/mehmetcelepkolu/Desktop/Google Drive/Engage UF/Transcription Files/ENGAGE Coded Transcriptions/"
-    # folder_path = r"/Users/mehmetcelepkolu/Desktop/Google Drive/Celepkolu-Boyer Research Share/Conferences/EDM 2019/prototype3/QuestionTestData/"
-
+    folder_path = r"/Users/mehmetcelepkolu/Desktop/Google Drive/Engage UF/Transcription Files/ENGAGE Coded Transcriptions/"  
     fileNameList = os.listdir(folder_path)
     print(fileNameList)
     if ('Icon\r') in fileNameList:
@@ -77,8 +76,6 @@ def ExtractData():
                 result1 = cleanAgain(result[0])
             else:
                 result1 = "DROP THIS"
-            # print(result1)
-
             aresults.append(result1)
 
         df_filtered['ExtractedQuestions'] = aresults
@@ -94,9 +91,7 @@ def ExtractData():
                 continue
 
         df = df.drop(df[df['QuestionCode'] == "C"].sample(frac=.688, random_state=1).index) # Downsample -.681 is the best
-
         df_new = df[['File', 'ExtractedQuestions', 'QuestionCode']]
-
         doc = np.asarray(df_new['ExtractedQuestions'].tolist())
 
         df = df.reset_index()

@@ -38,7 +38,7 @@ def cleanAgain(text):
     sentence = " ".join(cleanedTokens)
     return sentence
 
-
+# Extracting all the data files in a folder. The application can process multiple files together.
 def ExtractData():
     folder_path = r"/Users/mehmetcelepkolu/Desktop/Google Drive/Engage UF/Transcription Files/ENGAGE Coded Transcriptions/"  
     fileNameList = os.listdir(folder_path)

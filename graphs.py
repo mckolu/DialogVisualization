@@ -116,12 +116,10 @@ def graph_bokeh(timestamps):  # data and temporal
         # p = figure(tools='reset, hover', title="Number of Words", plot_width=200, plot_height=325,
         #            tooltips="S1: @S1_Total, S2: @S2_Total")
 
-
         p.toolbar.logo = None
         p.toolbar_location = None
         p.xaxis.axis_label = "Total Words"
         p.xaxis.axis_label_text_color = "whitesmoke"
-        # p.xaxis.axis_label_text_alpha = 0
         p.yaxis.visible = False
 
         p.yaxis.axis_line_width = 0.1
@@ -531,13 +529,6 @@ def graph_bokeh(timestamps):  # data and temporal
                         //myvideo1.currentTime = aaa ;
                         //myvideo1.play();
                         
-                        
-                        
-                        
-                        
-                        
-                        
-
 
                         console.log(d2);
                         console.log(typeof d2);
@@ -611,5 +602,3 @@ def graph_bokeh(timestamps):  # data and temporal
 
         )
         return encode_utf8(html)
-
-# https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs

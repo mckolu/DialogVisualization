@@ -48,8 +48,6 @@ X = np.asarray(df_new['ExtractedQuestions'].tolist())
 y = np.asarray(df_new['QuestionCode'].tolist())
 y = np.asarray([1 if i=="C" else 0 for i in y])
 
-# print("Data distribution: ", Counter(y), Counter(y)[1]/(Counter(y)[0]+Counter(y)[1]))
-
 
 # tfidf = TfidfVectorizer(ngram_range=(1,2), max_features=2000, preprocessor=my_cool_preprocessor, lowercase=True)
 tfidf = CountVectorizer(ngram_range=(1,2), max_features=2000, preprocessor=my_cool_preprocessor, lowercase=True) # , preprocessor=my_cool_preprocessor ... can be added min_df=2. Also, preprocessor=my_cool_preprocessor def my_cool_preprocessor(text):
@@ -197,7 +195,6 @@ for train_index, test_index in kf.split(X, y):
 #
 # fittedModel = joblib.load('ML_model.pkl')
 # print(fittedModel.predict(mySentence))
-
 
 # https://kavita-ganesan.com/news-classifier-with-logistic-regression-in-python/#Feature-Representation
 # https://www.quora.com/Why-does-TF-term-frequency-sometimes-give-better-F-scores-than-TF-IDF-does-for-text-classification

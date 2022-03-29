@@ -98,9 +98,5 @@ def ExtractData():
         dfList.append(df)
     return (dfList)
 
-# for each in ExtractData():
-#     print(each)
-
-# file1.close()
 
 ## TODO: Create machine learning functions that take df['ExtractedQuestions'] and df['QuestionCode'] and take care of the rest

@@ -6,11 +6,13 @@ DialogueVisualization is a platform that allows analyzing dialogues between two 
 
 ## Links to my publications for this application: 
 
-**Ph.D. Dissertation:** https://ufdcimages.uflib.ufl.edu/UF/E0/05/68/49/00001/Celepkolu_M.pdf
+**Ph.D. Dissertation:** <a href="https://ufdcimages.uflib.ufl.edu/UF/E0/05/68/49/00001/Celepkolu_M.pdf">Link</a> 👨🏻‍💻 
 
-**International Journal of Child-Computer Interaction**: http://learndialogue.org/pdf/LearnDialogue-Celepkolu-IJCCI-2020.pdf
+**International Journal of Child-Computer Interaction:** <a href="http://learndialogue.org/pdf/LearnDialogue-Celepkolu-IJCCI-2020.pdf">Link</a>
 
-**Educational Data Mining in CS Education (CSEDM):** http://learndialogue.org/pdf/LearnDialogue-Celepkolu-CSEDM-2019.pdf
+<!-- **International Journal of Child-Computer Interaction: ** <a href="http://learndialogue.org/pdf/LearnDialogue-Celepkolu-IJCCI-2020.pdf">Link</a> -->
+
+**Educational Data Mining in CS Education (CSEDM):** <a href="http://learndialogue.org/pdf/LearnDialogue-Celepkolu-CSEDM-2019.pdf">Link</a>
 
 ## Getting started
 Python, Flask, Bokeh Visualizations, Natural Language Processing and Machine Learning Models. 

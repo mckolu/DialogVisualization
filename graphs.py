@@ -584,7 +584,6 @@ def graph_bokeh(timestamps):  # data and temporal
                                  )
 
         # output_file('Graphs/' + GName + '.html')
-        # show(l2)
 
         js_resources = INLINE.render_js()
         css_resources = INLINE.render_css()

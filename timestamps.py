@@ -18,14 +18,13 @@ def temporal(dfs):
 
         name = data_df['GroupName'][0]
 
-        print ("---------------------------- " + name + " ----------------------------")
+        print ("-------------------------- " + name + " --------------------------")
 
         Speakers = ["S1", "S2"]
         TimeSeconds = (pd.to_numeric(data_df.TotalSecond, errors='coerce').fillna(0).astype(np.int64)).tolist()
 
         duration = 180  # seconds
 
-        # Sentences=[]
         Time = [x for x in range(duration)]
         sumList = [0] * duration
         Student1_UtteranceList = [0] * duration
@@ -83,8 +82,5 @@ def temporal(dfs):
         # dataSeconds_df.to_csv('Graphs/'+name+'dataSeconds_df.csv', index=False)
 
     return (dSeconds_dfs, dfs)
-
-
-
 
 

@@ -1,4 +1,4 @@
-# Dialogue Vizualizations with Python and NLP
+# Dialogue Visualizations with Python and NLP
 
 Incomplete description :) I haven't had time to clean the GitHub repo yet but I am planning to make it ready by 5/30/2022.
 

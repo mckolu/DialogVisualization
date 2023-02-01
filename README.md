@@ -1,6 +1,6 @@
 # Dialogue Visualizations with Python and Natural Language Processing
 
-Incomplete description :) I haven't had time to clean the GitHub repo yet but I am planning to make it ready by 2/22/2023.
+Incomplete description :) I haven't had time to clean the GitHub repo yet but I am planning to make it ready by 2/24/2023.
 
 DialogueVisualization is a platform that allows analyzing dialogues between two students and creating interactive visualizations. 
 

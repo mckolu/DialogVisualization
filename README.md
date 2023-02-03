@@ -10,7 +10,7 @@ DialogueVisualization is a platform that allows analyzing dialogues between two 
 
 **International Journal of Child-Computer Interaction:** <a href="http://learndialogue.org/pdf/LearnDialogue-Celepkolu-IJCCI-2020.pdf">Link</a>
 
-<!-- **International Journal of Child-Computer Interaction: ** <a href="http://learndialogue.org/pdf/LearnDialogue-Celepkolu-IJCCI-2020.pdf">Link</a>  -->
+<!-- **International Journal of Child-Computer Interaction: ** <a href="http://learndialogue.org/pdf/LearnDialogue-Celepkolu-IJCCI-2020.pdf">Link </a>   -->
 
 **Educational Data Mining in CS Education (CSEDM):** <a href="http://learndialogue.org/pdf/LearnDialogue-Celepkolu-CSEDM-2019.pdf">Link</a>
 

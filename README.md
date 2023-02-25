@@ -15,7 +15,7 @@ DialogueVisualization is a platform that allows analyzing dialogues between two 
 **Educational Data Mining in CS Education (CSEDM):** <a href="http://learndialogue.org/pdf/LearnDialogue-Celepkolu-CSEDM-2019.pdf">Link</a>
 
 ## Getting started
-Python, Flask, Bokeh Visualizations, Natural Language Processing and Machine Learning Models 
+Python, Flask, Bokeh Visualizations, Natural Language Processing and Machine Learning Models.
 
 <!-- # Running 
 Open a Command Prompt or Terminal in the repository and run the following -->
